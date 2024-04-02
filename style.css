@@ -1,0 +1,42 @@
+.button {
+    width: 100px;
+    height: 30px;
+    background-color: #808080;
+    border: none;
+    color: white;
+}
+
+/* CSS for gallery section */
+#gallery {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* CSS for gallery images */
+#gallery img {
+    margin: 10px;
+    border: 1px solid #fff;
+}
+
+/* CSS for aboutus section */
+#aboutus {
+    margin-top: 20px;
+}
+
+/* CSS for aboutus paragraph */
+#aboutus p {
+    font-family: verdana;
+    color: lightgrey;
+    padding: 0 20px;
+}
+
+/* CSS for footer section */
+footer {
+    background-color: #808080;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
