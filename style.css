@@ -1,42 +1,113 @@
-.button {
-    width: 100px;
-    height: 30px;
-    background-color: #808080;
-    border: none;
-    color: white;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Warna latar belakang lembut */
+    color: #333; /* Warna teks netral */
 }
 
-/* CSS for gallery section */
-#gallery {
+/* Header */
+header {
+    background-color: #4a90e2; /* Warna latar belakang header */
+    color: white; /* Warna teks header */
+    padding: 20px;
     text-align: center;
-    margin-top: 20px;
 }
 
-/* CSS for gallery images */
-#gallery img {
-    margin: 10px;
-    border: 1px solid #fff;
-}
-
-/* CSS for aboutus section */
-#aboutus {
-    margin-top: 20px;
-}
-
-/* CSS for aboutus paragraph */
-#aboutus p {
-    font-family: verdana;
-    color: lightgrey;
-    padding: 0 20px;
-}
-
-/* CSS for footer section */
-footer {
-    background-color: #808080;
-    color: white;
-    text-align: center;
+/* Navigasi */
+nav {
+    background-color: #4a90e2;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #357ab8; /* Efek hover untuk link */
+}
+
+/* Gambar ikonik media sosial */
+.social-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+}
+
+/* Galeri gambar */
+section#gallery {
+    padding: 20px;
+    background-color: #ffffff; /* Warna latar belakang galeri */
+}
+
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-grid img {
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05); /* Efek hover untuk gambar galeri */
+}
+
+/* Konten blog */
+section#aboutus {
+    padding: 20px;
+    background-color: #ffffff; /* Warna latar belakang konten blog */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+section#aboutus h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section#aboutus ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+/* Footer */
+footer {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Tombol */
+button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #357ab8; /* Efek hover untuk tombol */
 }
